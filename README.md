@@ -7,10 +7,6 @@ The intro_to_programming_with_python folder contains solutions for all exercises
 
 The python_basics_exercises contains solutions for selected problems from Python Basics Exercises.
 
-Py101-109 small problems
+py101_py109_small_problems contains solutions for the PY101-PY109 Small Problems exercises
 
-PY101 lesson 3 practice problems
-
-Quizzes from PY101
-
-SPOT wiki
+extra_problems contains everything else, including practice problems from TA sessions, SPOT sessions, study partners, and LSBot

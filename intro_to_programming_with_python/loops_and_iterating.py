@@ -22,7 +22,7 @@
 # 3. Use a while loop to print the numbers in my_list, one number 
 # per line. Then, do the same with a for loop.
 
-# my_list = [6, 3, 0, 11, 20, 4, 17]
+#my_list = [6, 3, 0, 11, 20, 4, 17]
 
 # # Solution: 
 
@@ -40,7 +40,7 @@
 # with even values, one number per line. Then, print
 #  the odd numbers using a ' for' loop.
 
-# my_list = [6, 3, 0, 11, 20, 4, 17]
+#my_list = [6, 3, 0, 11, 20, 4, 17]
 
 # idx = 0
 
@@ -87,6 +87,14 @@
 #     17, 16, 0,
 # ]
 
+# def even_odd(num):
+#     return 'even' if num % 2 == 0 else 'odd'
+
+# new_list = [ even_odd(num) for num in my_list ]
+# print(new_list)
+
+
+
 # Expected output
 # pretty-printed for clarity
 # [
@@ -107,6 +115,10 @@
 # - - - - - - - - - - - - - -
 # 7. Write a find_integers function that returns a list 
 # of all the integers from my_tuple:
+
+# my_tuple = (1, 'a', '1', 3, [7], 3.1415,
+#             -4, None, {1, 2, 3}, False)
+
 
 # def find_integers(input):
 
@@ -130,13 +142,32 @@
 # should be in the dict. Use the set given by my_set 
 # as the source of strings.
 
-# my_set = {
-#     'Fluffy',
-#     'Butterscotch',
-#     'Pudding',
-#     'Cheddar',
-#     'Cocoa',
-# }
+my_set = {
+    'Fluffy',
+    'Butterscotch',
+    'Pudding',
+    'Cheddar',
+    'Cocoa',
+}
+
+my_set_dict = {
+    cat: len(cat)
+    for cat in my_set
+
+}
+
+print(my_set_dict)
+
+
+
+
+
+
+
+
+
+
+
 
 # result = {
 #     element: len(element)
@@ -145,6 +176,16 @@
 # }
 
 # print(result)
+
+
+
+
+
+
+
+
+
+
 
 # - - - - - - - - - - - - - -
 # 9. Write a function that computes and returns the factorial 
@@ -231,21 +272,21 @@
 # 11. Print all of the even numbers in the following 
 # list of nested lists. This time, don't use any for loops.
 
-my_list = [
-  [1, 3, 6, 11],
-  [4, 2, 4],
-  [9, 17, 16, 0],
-]
+# my_list = [
+#   [1, 3, 6, 11],
+#   [4, 2, 4],
+#   [9, 17, 16, 0],
+# ]
 
-idx_outer = 0
+# idx_outer = 0
 
-while idx_outer < len(my_list):
-    idx_inner = 0
+# while idx_outer < len(my_list):
+#     idx_inner = 0
 
-    while idx_inner < len(my_list[idx_outer]):
-        inner_list = my_list[idx_outer]
-        if inner_list[idx_inner] % 2 == 0:
-            print(inner_list[idx_inner])
-        idx_inner += 1
+#     while idx_inner < len(my_list[idx_outer]):
+#         inner_list = my_list[idx_outer]
+#         if inner_list[idx_inner] % 2 == 0:
+#             print(inner_list[idx_inner])
+#         idx_inner += 1
     
-    idx_outer += 1
+#     idx_outer += 1

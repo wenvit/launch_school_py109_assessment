@@ -79,8 +79,8 @@
 # }
 
 # dict2 = dict(dict1)
-# dict1['a'][1] = 42
-# print(dict2['a'])
+# dict1['a'][1] = 42 
+# print(dict2['a']) 
 
 # Solution:
 
@@ -138,18 +138,18 @@
 
 # In addition, before you run this code, can you predict the output values?
 
-dict1 = {
-    'a': [{7, 1}, ['aa', 'aaa']],
-    'b': ({3, 2}, ['bb', 'bbb']),
-}
+# dict1 = {
+#     'a': [{7, 1}, ['aa', 'aaa']],
+#     'b': ({3, 2}, ['bb', 'bbb']),
+# }
 
-dict2 = dict(dict1) # You may modify the `???` part
+# dict2 = dict(dict1) # You may modify the `???` part
             # of this line
 
-print(dict1         is dict2)          # False
-print(dict1['a']    is dict2['a'])     # True
-print(dict1['a'][0] is dict2['a'][0])  # True
-print(dict1['a'][1] is dict2['a'][1])  # True
-print(dict1['b']    is dict2['b'])     # True
-print(dict1['b'][0] is dict2['b'][0])  # True
-print(dict1['b'][1] is dict2['b'][1])  # True
+# print(dict1         is dict2)          # False
+# print(dict1['a']    is dict2['a'])     # True
+# print(dict1['a'][0] is dict2['a'][0])  # True
+# print(dict1['a'][1] is dict2['a'][1])  # True
+# print(dict1['b']    is dict2['b'])     # True
+# print(dict1['b'][0] is dict2['b'][0])  # True
+# print(dict1['b'][1] is dict2['b'][1])  # True

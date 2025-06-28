@@ -2,7 +2,7 @@
 # Be sure to identify the output value.
 
 # def do_something(dictionary):
-#     return sorted(dictionary.keys())[1].upper()
+#     return sorted(dictionary.keys())[1].upper()  
 
 # my_dict = {
 #     'Karl':     108,
@@ -13,7 +13,7 @@
 #     'Chris':    101,
 # }
 
-# print(do_something(my_dict))
+# print(do_something(my_dict)) 
 
 # This will print: CHRIS
 # Within the function, several functions and methods are chained.
@@ -48,6 +48,13 @@
 # 3. Consider the following code:
 
 # def sum_of_squares(num1, num2):
+#     return square(num1) + square(num2)
+
+# def sum_of_squares(num1, num2):
+
+#     def square(num):
+#         return num * num
+    
 #     return square(num1) + square(num2)
 
 # print(sum_of_squares(3, 4))   # 25 (3 * 3 + 4 * 4)
@@ -99,23 +106,23 @@
 
 # There's a bug in this code. Identify the bug, and fix it.
 
-def all_actions():
-    counter = 0
+# def all_actions():
+#     counter = 0
 
-    def increment_counter():
-        nonlocal counter
-        counter += 1
+#     def increment_counter():
+#         nonlocal counter
+#         counter += 1
 
-    print(counter)                # 0
+#     print(counter)                # 0
 
-    increment_counter()
-    print(counter)                # 1
+#     increment_counter()
+#     print(counter)                # 1
 
-    increment_counter()
-    print(counter)                # 2
+#     increment_counter()
+#     print(counter)                # 2
 
-    counter = 100
-    increment_counter()
-    print(counter)                # 101
+#     counter = 100
+#     increment_counter()
+#     print(counter)                # 101
 
-all_actions()
+# all_actions()

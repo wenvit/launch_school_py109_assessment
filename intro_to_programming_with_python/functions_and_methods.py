@@ -7,6 +7,8 @@
 # set_foo()
 # print(foo)
 
+
+
 # Solution:
 
 # This code will raise a `NameError` when `print` is invoked on line 8 
@@ -24,10 +26,14 @@
 # foo = 'bar'
 
 # def set_foo():
-#     foo = 'qux'
+#     foo = 'qux' # can't reassign global variable from local function scope, local variable 
 
 # set_foo()
-# print(foo)
+# print(foo) # bar
+
+
+
+
 
 # Solution:
 
@@ -377,17 +383,22 @@
 # 18. The following function returns a list of the remainders of dividing
 # the numbers in numbers by 3:
 
-# def remainders_3(numbers):
-#     return [number % 3 for number in numbers]
+def remainders_3(numbers):
+    return [number % 3 for number in numbers]
 
 # Use this function to determine which of the following lists contains 
 # at least one number that is not evenly divisible by 3 (that is, the 
 # remainder is not 0):
 
-# numbers_1 = [0, 1, 2, 3, 4, 5, 6]
-# numbers_2 = [1, 2, 4, 5]
-# numbers_3 = [0, 3, 6]
-# numbers_4 = []
+numbers_1 = [0, 1, 2, 3, 4, 5, 6]
+numbers_2 = [1, 2, 4, 5]
+numbers_3 = [0, 3, 6]
+numbers_4 = []
+
+print(any(remainders_3(numbers_1)))
+
+
+
 
 # Solution:
 
@@ -412,10 +423,10 @@ def remainders_5(numbers):
 # Use this function to determine which of the following 
 # lists do not contain any numbers that are divisible by 5:
 
-numbers_1 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]  # False
-numbers_2 = [1, 2, 3, 4, 6, 7, 8, 9]            # True
-numbers_3 = [0, 5, 10]                          # False
-numbers_4 = []                                  # True
+# numbers_1 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]  # False
+# numbers_2 = [1, 2, 3, 4, 6, 7, 8, 9]            # True
+# numbers_3 = [0, 5, 10]                          # False
+# numbers_4 = []                                  # True
 
 # Solution:
 
@@ -424,7 +435,7 @@ numbers_4 = []                                  # True
 # Using `all` function will return True if all elements are truthy
 # None of the elements are 0 
 
-print(all(remainders_5(numbers_1)))
-print(all(remainders_5(numbers_2)))
-print(all(remainders_5(numbers_3)))
-print(all(remainders_5(numbers_4)))
+# print(all(remainders_5(numbers_1)))
+# print(all(remainders_5(numbers_2)))
+# print(all(remainders_5(numbers_3)))
+# print(all(remainders_5(numbers_4)))

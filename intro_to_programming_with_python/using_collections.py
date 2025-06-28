@@ -260,17 +260,24 @@
 # 15. Without running the following code, what values will 
 # be printed by line 10?
 
-# pets = {
-#     'Cat':  'Meow',
-#     'Dog':  'Bark',
-#     'Bird': 'Tweet',
-# }
+pets = {
+    'Cat':  'Meow',
+    'Dog':  'Bark',
+    'Bird': 'Tweet',
+}
 
-# keys = pets.keys()
-# print(keys)
-# del pets['Dog']
-# pets['Snake'] = 'Sssss'
-# print(keys)
+keys = pets.keys()
+values = pets.values()
+print(keys) 
+del pets['Dog'] 
+pets['Snake'] = 'Sssss' 
+print(keys) 
+print(values)
+
+
+
+
+
 
 # Solution: 
 # This will print ['Cat', 'Bird', 'Snake'] wrapped as a 

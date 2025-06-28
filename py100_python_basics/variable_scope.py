@@ -37,6 +37,7 @@
 
 # my_function()
 
+
 # This will raise an `UnboundLocalErro` because within the function body,
 # python sees the assignment statement `x = x + 5` and interprets
 # `x` as a local variable. On the right side of the assignment operator
@@ -76,6 +77,7 @@
 #     print(a)
 
 # my_function()
+
 
 # This will print: 1.
 # A global variable `a` is initialized to the integer `1`. This
@@ -141,6 +143,7 @@
 # my_function()
 # print(a)
 
+
 # This prints: 2
 # Within the body of `my_function`, the `global a` statement
 # tells Python that the variable `a` is the global `a`. 
@@ -159,6 +162,7 @@
 
 # greeting = 'Hello world!'
 
+
 # this will raise a `NameError` because when `print` is called passing
 # the the global variable `greeting` as an argument, `greeting` has not
 # yet been initialized
@@ -174,25 +178,27 @@
 # my_function(a)
 # print(a)
 
+
 # This will print: 7
 # The global variable `a` is initialized to the integer `7`.
 # `my_function` is called passing the reference to the global `a`
 # object. Within `my_function`, the local variable `b` points to 
 # the same object refernced by the global `a`. Within the function, 
 # `b` is reassigned to `17` using augmented assignment. Because
-# integers are immutable, the reassignment of `b` does not impact
+# `b` is a local variable, reassigning `b` does not impact
 # the object referenced by the global variable `a`
 
 # - - - - - - - - - - - - - -
 # What's My Value (Part 10)
 
-b = [1, 2, 3]
+# b = [1, 2, 3]
 
-def my_function():
-    b[0] = 10
+# def my_function():
+#     b[0] = 10
 
-my_function()
-print(b)
+# my_function()
+# print(b)
+
 
 # This will print: [10, 2, 3]
 # The global variable `b` is initialized to the list object
